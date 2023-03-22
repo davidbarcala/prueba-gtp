@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simulador de Plazo Fijo</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<div id="formulario">
+		<label for="monto">Monto:</label>
+		<input type="number" id="monto" placeholder="Ingrese el monto">
+
+		<label for="tasa">Tasa de interés:</label>
+		<input type="number" id="tasa" placeholder="Ingrese la tasa">
+
+		<label for="plazo">Plazo fijo (días):</label>
+		<select id="plazo">
+			<option value="30">30</option>
+			<option value="60">60</option>
+			<option value="90">90</option>
+			<option value="120">120</option>
+			<option value="180">180</option>
+			<option value="360">360</option>
+		</select>
+
+		<button id="calcular">Calcular</button>
+
+		<div id="resultado"></div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
